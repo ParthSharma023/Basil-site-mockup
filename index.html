@@ -784,6 +784,59 @@ footer {
 .footer-logo { font-family: 'Cormorant', serif; font-size: 18px; color: var(--text-2); }
 .footer-copy { font-size: 11px; color: var(--text-3); font-family: 'JetBrains Mono', monospace; }
 
+/* ===== MOBILE ===== */
+@media (max-width: 768px) {
+  nav {
+    padding: 0 20px;
+  }
+  .nav-links { display: none; }
+
+  #hero {
+    padding: 100px 20px 60px;
+  }
+  .hero-inner {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+  .hero-h1 { font-size: 38px; }
+  .hero-sub { font-size: 15px; max-width: 100%; }
+  .hero-actions { flex-direction: column; align-items: stretch; }
+  .hero-actions .btn { text-align: center; justify-content: center; }
+
+  #problem, #how, #features, #proof, #cta {
+    padding: 80px 20px;
+  }
+
+  .problem-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .steps-row {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  .step-arrow { display: none; }
+
+  .feat-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .feat-card, .p-card {
+    padding: 32px 24px;
+  }
+
+  .proof-quote { font-size: 22px; }
+
+  footer {
+    padding: 24px 20px;
+    flex-direction: column;
+    gap: 8px;
+    text-align: center;
+  }
+
+  .section-h2 { font-size: 32px; }
+  .cta-h2 { font-size: 32px; }
+}
 </style>
 </head>
 <body>
